@@ -4,6 +4,8 @@ from django.urls.conf import include
 from lock import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('enter', views.enter, name='enter')
+    path("", views.index, name="index"),
+    path("enter", views.enter, name="enter"),
+    path("login", views.login, name="login"),
+    path("signup", views.signup, name="signup")
 ]

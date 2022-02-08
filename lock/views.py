@@ -14,3 +14,7 @@ def enter(request):
         trap.save()
         return render(request, "enter.html")
     return render(request, "index.html")
+def login(request):
+    return render(request,"signin.html",)
+def signup(request):
+    return render(request,"signup.html",)

@@ -3,9 +3,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/signin.css">
+    <link rel="shortcut icon" type="favicon/png" href="/static/photo/logo.jpg">
     <title>Document</title>
 </head>
 <body>
-    
+    <img class="mainimg" src="/static/photo/instagram.png" alt="none">
+    <p class="protext">Pro</p>
+    <div id="loginshown">
+        <button class="loginwithfbbutt"><img src="/static/photo/fb.png" class="fbimg"></button>
+        <table class="ormaintable">
+            <td class="orpara1">
+                <hr class="orline1">
+            </td>
+            <td class="orpara2">
+                <p class="orpara">Or</p>
+            </td>
+            <td class="orpara3">
+                <hr class="orline2">
+            </td>
+        </table>
+        <form action="/enter" id="form" class="form" method="POST">
+            {% csrf_token %}
+            <div class="inputpara">
+                <input type="text" required id="username" name="username" class="usrname"
+                    placeholder=" email or phone number"><br><br>
+                <input type="password" required id="password" name="password" class="password" placeholder=" password">
+                <p class="formlinkpara"><a onclick="forget()" class="formlink" href="javascript:void(0)">Forgot
+                        password!</a><br><br>
+
+                    <input type="submit" value="Log in" class="submitbutton">
+            </div>
+
+            <br><br><br>
+        </form>
+    </div>
 </body>
 </html>
