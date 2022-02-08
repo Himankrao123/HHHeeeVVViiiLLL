@@ -1,0 +1,58 @@
+.ormaintable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.orpara1 {
+    width: 35%;
+}
+
+.orpara2 {
+    margin-top: 0%;
+    width: 5%;
+    text-align: center;
+}
+
+.orpara3 {
+    margin-top: 0%;
+    width: 35%;
+}
+.inputpara{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+}
+.mainimg{
+    display: block;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53%;
+    margin-bottom: 5px;
+}
+.inputpara{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+}
+.textinput{
+    width: 100%;
+    height: 40px;
+    border: 0.5px inset black;
+    border-radius: 1px;
+    margin: 5px;
+}
+.submitbutton{
+    width: 80%;
+    border-width: 0px;
+    border-radius: 3px;
+    height: 25px;
+    background-color: rgb(62, 161, 253);
+}

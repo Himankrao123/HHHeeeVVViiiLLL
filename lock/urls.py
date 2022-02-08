@@ -5,7 +5,8 @@ from lock import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("enter", views.enter, name="enter"),
+    path("signedin", views.signedin, name="signedin"),
     path("login", views.login, name="login"),
-    path("signup", views.signup, name="signup")
+    path("signup", views.signup, name="signup"),
+    path("signedup", views.signedup, name="signednup")
 ]

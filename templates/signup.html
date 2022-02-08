@@ -3,14 +3,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/static/css/signup.css">
+    <link rel="shortcut icon" type="favicon/png" href="/static/photo/logo.jpg">
     <title>Document</title>
 </head>
 <body>
-    <div class="signupshown" id="signupshown">
-        <p class="nottext">
-            
-        </p>
-
+    <img class="mainimg" src="/static/photo/instagram.png" alt="none">
+    <div id="loginshown">
+        <!-- <button class="loginwithfbbutt"><img src="/static/photo/fb.png" class="fbimg"></button> -->
+        <!-- <table class="ormaintable">
+            <td class="orpara1">
+                <hr class="orline1">
+            </td>
+            <td class="orpara2">
+                <p class="orpara">Or</p>
+            </td>
+            <td class="orpara3">
+                <hr class="orline2">
+            </td>
+        </table> -->
+        <div class="signupshown" id="signupshown">
+            <p class="nottext">
+                <form method="POST" action="/signedup">
+                    {% csrf_token %}
+                    <div class="inputpara">
+                        <input class="textinput"required type="text" name="username" placeholder="username"><br>
+                        <input class="textinput"required type="password" name="password" placeholder="password"><br>
+                        <input class="textinput"required type="password" name="password2" placeholder="password again"><br>
+                        <input class="textinput"required type="email" name="email" placeholder="email"><br>
+                        <input class="textinput"required type="number" name="number" placeholder="contact number"><br>
+                        <input class="textinput"required name="dateofbirth" type="date"><br>
+                        <p>Gender:-<br>
+                        <input name="gender" value="male" type="radio">Male<br>
+                        <input name="gender" value="female" type="radio">Female
+                        </p>
+                        <input type="submit" class="submitbutton" value="Sign up">
+                    </div>
+                </form>
+            </p>
+    
+        </div>
     </div>
+    
 </body>
 </html>

@@ -22,13 +22,6 @@ margin-right: auto;
 width: 53%;
 margin-bottom: 5px;
 }
-.protext{
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size:xx-large;
-text-align: center;
-color: rgb(223, 95, 228);
-margin-top: auto;
-}
 .textpara{
 display: block;
 margin-left: auto;
@@ -81,32 +74,4 @@ color: rgb(62, 161, 253);
 font-size: medium;
 text-decoration: none;
 color: rgb(62, 161, 253);
-}
-.submitbutton{
-width: 100%;
-border-width:0px;
-border-radius:3px;
-height: 25px;
-background-color: rgb(62, 161, 253);
-}
-#loginshown{
-display:none;
-}
-#tobehidden{
-display:block;
-}
-.nottext{
-text-align: center;
-}
-.instalink{
-text-decoration: double;
-color: rgb(255, 0, 0);
-
-}
-.signupshown{
-display:none;
-}
-.forgetd{
-text-align: center;
-display: none;
 }
